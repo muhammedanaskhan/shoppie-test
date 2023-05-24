@@ -1,0 +1,32 @@
+.header{
+    padding: 20px 50px;
+    display: flex;
+}
+
+.logoContainer{
+    width: 100px;
+    height: 100px;
+}
+
+.MobileView{
+    display: none;
+}
+
+.DesktopView{
+    display: flex;
+}
+
+.DesktopView p{
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .MobileView{
+        display: flex;
+    }
+
+    .DesktopView{
+        display: none;
+    }
+}
+  
