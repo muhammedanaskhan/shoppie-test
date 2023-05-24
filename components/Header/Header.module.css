@@ -1,11 +1,13 @@
 .header{
-    padding: 20px 50px;
+    padding: 16px 40px;
     display: flex;
+    justify-content: space-between;
 }
 
-.logoContainer{
-    width: 100px;
-    height: 100px;
+.logo{
+  display: flex;
+  align-items: center;
+  height: 49.5px;
 }
 
 .MobileView{
@@ -14,13 +16,43 @@
 
 .DesktopView{
     display: flex;
+    gap: 2rem;
 }
-
+.DesktopView a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+}
 .DesktopView p{
-    text-decoration: none !important;
+    font-size: 0.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2; 
+    font-weight: 500px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+.btn{
+     background-color: hsla(0, 0%, 100%, 1);
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  font-size: 0.8rem;
+  min-width: max-content;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+    line-height: 2; 
+  border: 2px solid hsla(0, 0%, 7%, 1);
+  box-shadow: 4px 4px 0px hsla(0, 0%, 7%, 1);
+  font-weight: 200;
+  transition: 250ms ease;
+}
+
+@media only screen and (max-width: 781px) {
     .MobileView{
         display: flex;
     }
